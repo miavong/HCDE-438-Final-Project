@@ -60,6 +60,8 @@ header h1 {
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: left;
+  max-height: 600px; 
+  overflow-y: auto; 
 }
 
 h2 {

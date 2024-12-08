@@ -58,7 +58,7 @@ function App() {
       console.log("Document written with ID: ", docRef.id);
 
       // Update local state with saved job
-      setSavedJobs((prevJobs) => [...prevJobs, { ...job, id: docRef.id }]);
+      setSavedJobs((prevJobs) => [{ ...job, id: docRef.id }, ...prevJobs]);
     } catch (error) {
       console.error("Error adding document: ", error);
     }
